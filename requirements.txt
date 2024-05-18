@@ -5,9 +5,8 @@ llama_index==0.10.37
 pypdf==4.2.0
 replicate==0.26.0
 streamlit==1.31.0
-torch==1.12.1
-torch-geometric==2.1.0
--f https://data.pyg.org/whl/torch-1.12.1+cpu.html 8
-torch-scatter==2.0.9
--f https://data.pyg.org/whl/torch-1.12.1+cpu.html 8
-torch-sparse==0.6.16
+torch==1.10.0+cu113
+torchaudio==0.10.0+cu113
+torchlibrosa==0.0.9
+torchsummary==1.5.1
+torchvision==0.11.1+cu113
