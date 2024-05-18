@@ -1,4 +1,4 @@
-import torch
+#import torch
 from huggingface_hub import login
 
 from llama_index.core import VectorStoreIndex,ServiceContext,SimpleDirectoryReader
@@ -74,7 +74,7 @@ if token!="":
         model_name="meta-llama/Meta-Llama-3-8B-Instruct",
         device_map="auto",
         # loading model in 8bit for reducing memory
-        model_kwargs={"torch_dtype": torch.float16 , "load_in_8bit":True}
+        #model_kwargs={"torch_dtype": torch.float16 , "load_in_8bit":True}
     )
 
     embed_model= LangchainEmbedding(HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2"))
